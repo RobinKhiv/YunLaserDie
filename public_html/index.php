@@ -5,23 +5,24 @@
     <title>Yun Laser Die LLC</title>
 </head>
 <body>
-    <?php include("../resources/components/header.php"); ?>
+    <?php include('../resources/components/header.php'); ?>
     <?php
     isset($_GET['route']) ? $route =$_GET['route'] : $route = 'home';
     switch ($route){
         case 'home':
-            include('./routes/home.php');
+            include('../resources/routes/home.php');
             break;
         case 'about':
-            include('./routes/about.php');
+            include('../resources/routes/about.php');
             break;
         case 'services':
-            include('./routes/services.php');
+            include('../resources/routes/services.php');
             break;
         case 'contact';
-            include('./routes/contact.php');
+            include('../resources/routes/contact.php');
             break;
     }
     ?>
+    <?php include('../resources/components/footer.php'); ?>
 </body>
 </html>
