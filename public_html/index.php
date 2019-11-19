@@ -1,4 +1,3 @@
-<?php  isset($_GET['route']) ? $route =$_GET['route'] : $route = 'home'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +8,7 @@
 <body>
     <?php include('../resources/components/header.php'); ?>
     <?php
+    isset($_GET['route']) ? $route =$_GET['route'] : $route = 'home';
     switch ($route){
         case 'home':
             include('../resources/routes/home.php');
