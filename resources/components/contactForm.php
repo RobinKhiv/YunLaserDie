@@ -10,6 +10,5 @@
       box-sizing: border-box;	
       width: 100%;"></textarea>
     </div>
-   
     <input type="submit" name="submit"/>
 </form>
